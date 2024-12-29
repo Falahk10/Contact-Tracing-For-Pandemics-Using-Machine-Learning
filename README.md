@@ -14,11 +14,17 @@ Additionally, a JSON file named "livedata.json" containing people's location dat
 
 Code Structure:
 Importing Libraries: The code begins by importing the necessary libraries and setting up a visualization environment.
+
 Data Loading: It reads the "livedata.json" file and stores the data in a pandas DataFrame named df.
+
 Data Cleaning: Null values in the dataset are checked and handled.
+
 Visualization: A scatter plot is created using latitude and longitude, with points colored based on each person’s unique "id".
+
 Contact Detection: The DBSCAN clustering algorithm is used to identify individuals who have been within close proximity (6 feet) of each other based on their location data.
+
 Contact Function: A function, get_infected_name(), is defined to take a person’s name as input and return a list of individuals who were in contact with them.
+
 Output: The function is called with the input name "Bob," and it outputs that "Judy had come in contact with the patient."
 
 ### This output dashboard visualizes the machine learning algorithm's results, where individuals are tracked by forming clusters based on a specified radius.
